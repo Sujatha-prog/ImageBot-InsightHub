@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Understanding App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_image.css') }}">
+</head>
+<body>
+    <h1>📷 Image Understanding App 🤖</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .jpeg, .png" required>
+        <button type="submit">Upload & Analyze</button>
+    </form>
+</body>
+</html>
